@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=dev_manager
+Exec=dev_manager
+Icon=com.github.pedromiguel_dev.dev_manager
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

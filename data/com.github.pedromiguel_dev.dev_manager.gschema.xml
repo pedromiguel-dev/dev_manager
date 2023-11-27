@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="dev_manager">
+	<schema id="com.github.pedromiguel_dev.dev_manager" path="/com/github/pedromiguel_dev/dev_manager/">
+	</schema>
+</schemalist>
