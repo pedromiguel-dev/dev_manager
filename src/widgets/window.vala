@@ -22,8 +22,36 @@ namespace DevManager {
     [GtkTemplate (ui = "/com/github/pedromiguel_dev/dev_manager/ui/window.ui")]
     public class Window : Adw.ApplicationWindow {
 
+        [GtkChild] public unowned Adw.NavigationSplitView split_view;
+        [GtkChild] public unowned Adw.ViewStack main_content;
+        [GtkChild] public unowned Gtk.ListBox sections;
+
+        [GtkChild] public unowned DevManager.ManagePage manage_page;
+
+        public SimpleActionGroup actions { get; construct; }
+
+        ActionEntry[] ACTION_ENTRIES = {
+                { "go_manage_page", go_manage_page },
+                { "go_foo", go_foo },
+        };
+
         public Window (Gtk.Application app) {
-            Object (application: app);
+            Object (application: app, actions: new SimpleActionGroup ());
+
+            actions.add_action_entries (ACTION_ENTRIES, this);
+            this.insert_action_group ("win", actions);
+
+        }
+
+        private void go_manage_page () {
+            split_view.set_show_content (true);
+            main_content.set_visible_child_name ("manager_page");
+            print("go to manage page");
+        }
+        private void go_foo () {
+            split_view.set_show_content (true);
+            main_content.set_visible_child_name ("foo_page");
+            print("go to foo page");
         }
     }
 }

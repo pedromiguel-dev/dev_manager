@@ -2,6 +2,9 @@
 <gresources>
   <gresource prefix="/com/github/pedromiguel_dev/dev_manager">
     <file preprocess="xml-stripblanks">ui/window.ui</file>
+    <file preprocess="xml-stripblanks">ui/manage_pages/manage_page.ui</file>
+    <file preprocess="xml-stripblanks">ui/manage_pages/manage_page_index.ui</file>
+        <file preprocess="xml-stripblanks">ui/manage_pages/manage_page_spaces.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
   </gresource>
 </gresources>

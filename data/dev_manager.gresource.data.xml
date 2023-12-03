@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/pedromiguel_dev/dev_manager/data/icons/hicolor/scalable/actions">
+    <file preprocess="xml-stripblanks">git-symbolic.svg</file>
+  </gresource>
+</gresources>

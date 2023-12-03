@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <template class="DevManagerManagePage" parent="GtkBox">
+    <child>
+      <object class="AdwNavigationView">
+
+        <child>
+          <object class="DevManagerManagePageIndex" id="manager_home"></object>
+        </child>
+
+        <child>
+          <object class="DevManagerManagePageSpaces" id="manager_spaces"></object>
+        </child>
+
+      </object>
+    </child>
+
+  </template>
+</interface>
